@@ -15,7 +15,7 @@ class Snake:
     coordinates = []
 
     def __init__(self):
-        self.delay = 0.1
+        self.delay = 0.2
         self.gameOver = False
         self.points = score.ScoreBoard()
         self.pass_the_edge = False
@@ -31,7 +31,7 @@ class Snake:
         x = 0
         y = 0
         for i in range(self.length):
-            temp_snake = Turtle('circle')
+            temp_snake = Turtle('square')
             temp_snake.color('white')
             temp_snake.penup()
             temp_snake.goto(x, y)
